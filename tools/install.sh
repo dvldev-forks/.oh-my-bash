@@ -6,7 +6,7 @@ if [ -z "${BASH_VERSION-}" ]; then
   printf "Error: Bash 3.2 or higher is required for Oh My Bash.\n"
   printf "Error: Install Bash and try running this installation script with Bash.\n"
   if command -v bash >/dev/null 2>&1; then
-    printf 'Example: \033[31;1mbash\033[0;34m -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"\n'
+    printf 'Example: \033[31;1mbash\033[0;34m -c "$(curl -fsSL https://raw.githubusercontent.com/dvldev-forks/oh-my-bash/master/tools/install.sh)"\n'
   fi
   return 1 >/dev/null 2>&1 || exit 1
 fi
@@ -23,7 +23,7 @@ fi
 _omb_install_print_version() {
   local OMB_VERSINFO
   OMB_VERSINFO=(1 0 0 0 master noarch)
-  printf '%s\n' 'Install script for Oh-My-Bash (https://github.com/ohmybash/oh-my-bash)'
+  printf '%s\n' 'Install script for Oh-My-Bash (https://github.com/dvldev-forks/oh-my-bash)'
   printf 'oh-my-bash, version %s.%s.%s(%s)-%s (%s)\n' "${OMB_VERSINFO[@]}"
 }
 
